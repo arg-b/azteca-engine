@@ -7,5 +7,5 @@
 		#define AZTECA_API __declspec(dllimport)
 	#endif
 #else
-	#error Azteca only supports Windows!
+	#error azteca engine only supports Windows!
 #endif

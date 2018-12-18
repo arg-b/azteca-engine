@@ -1,10 +1,20 @@
-#include "sandbox_app.h"
+#include <azteca.h>
 
-sandbox_app::sandbox_app()
+class sandbox_app : public azteca::application
 {
-}
+public:
+	sandbox_app()
+	{
 
+	}
 
-sandbox_app::~sandbox_app()
+	~sandbox_app()
+	{
+
+	}
+};
+
+azteca::application* azteca::create_application()
 {
+	return new sandbox_app();
 }

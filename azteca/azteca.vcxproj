@@ -56,7 +56,6 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>AZ_PLATFORM_WINDOWS;AZ_BUILD_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -68,7 +67,6 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>AZ_PLATFORM_WINDOWS;AZ_BUILD_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -80,9 +78,9 @@
     <ClInclude Include="src\azteca\application.h" />
     <ClInclude Include="src\azteca\core.h" />
     <ClInclude Include="src\azteca\entry_point.h" />
+	<ClInclude Include="src\azteca.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\azteca.h" />
     <ClCompile Include="src\azteca\application.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
